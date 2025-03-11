@@ -3,7 +3,7 @@ import { Header, Footer } from '../components/indexComponents.js';
 
 export function MainLayout() {
     return (
-        <div className="flex flex-col min-h-screen justify-between">
+        <div className="flex flex-col min-h-screen justify-between mx-8">
             <Header />
             <main
                 id="main-site-container"
