@@ -1,11 +1,24 @@
+import { createBrowserRouter, RouterProvider } from 'react-router';
 import { MainLayout } from './layout/MainLayout.jsx';
+import { HomePage } from './pages/indexPages.js';
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <MainLayout />,
+        children: [
+            {
+                index: true,
+                element: <HomePage />,
+            },
+        ],
+    },
+]);
 
 function App() {
     return (
         <>
-            <div className="flex flex-col min-h-screen justify-between bg-[#F8EDED]">
-                <MainLayout />
-            </div>
+            <RouterProvider router={router} />
         </>
     );
 }
