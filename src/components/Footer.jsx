@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import youtube from '../assets/icons/youtube-logo.svg';
 import instagram from '../assets/icons/instagram-logo.svg';
+import bandcamp from '../assets/icons/bandcamp-500.svg';
 
 function Footer() {
     return (
@@ -67,6 +68,17 @@ function Footer() {
                             <img
                                 src={youtube}
                                 alt="Link to YouTube"
+                                width={32}
+                                height={32}
+                            />
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link to={'https://burnjuniper.bandcamp.com/'}>
+                            <img
+                                src={bandcamp}
+                                alt="Link to Bandcamp"
                                 width={32}
                                 height={32}
                             />
