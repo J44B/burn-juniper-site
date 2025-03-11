@@ -1,16 +1,26 @@
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import { MainLayout } from './layout/MainLayout.jsx';
-import { HomePage } from './pages/indexPages.js';
+import {
+    HomePage,
+    AboutPage,
+    ContactPage,
+    LivePage,
+    MusicPage,
+} from './pages/indexPages.js';
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: '',
         element: <MainLayout />,
         children: [
             {
                 index: true,
                 element: <HomePage />,
             },
+            { path: '/about', element: <AboutPage /> },
+            { path: '/music', element: <MusicPage /> },
+            { path: '/live', element: <LivePage /> },
+            { path: '/contact', element: <ContactPage /> },
         ],
     },
 ]);
