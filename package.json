@@ -4,10 +4,10 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "burnjuniper",
-        "build": "burnjuniper build",
+        "dev": "vite",
+        "build": "vite build",
         "lint": "eslint .",
-        "preview": "burnjuniper preview"
+        "preview": "vite preview"
     },
     "dependencies": {
         "@tailwindcss/vite": "^4.0.12",
